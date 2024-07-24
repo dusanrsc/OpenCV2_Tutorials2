@@ -1,0 +1,58 @@
+/* header layout */
+
+.theader img { width:156px; height:58px; }
+.theader { text-align:center; }
+
+/* ad layout */
+
+/*
+this would trigger edge-to-edge ads, but I'm not sure this is such a good idea
+who cares about the exactly 320px width?
+.adbox { margin-left:-20px; margin-right:-20px; }
+*/
+
+/* menu layout */
+
+.menu .menu {
+  /* no floaty stuff, full width */
+  float:none;
+  width:100%;
+  cursor: default;
+}
+
+.menu .menu .header {
+	background-color: var(--alternateSection);
+}
+
+.menu .collapsed .menu {
+  /* show/hide entire fixed menu */
+  display: none;
+}
+
+.menu .menu.collapsed ul, .menu .narrow_expander {
+  /* no mouseover collapse/expand */
+  display:block;
+}
+
+.menu .narrow_expander {
+  font-size: 1.250rem;
+  font-weight: 800;
+  text-align: center;
+  height:34px;
+  padding-top:10px;
+}
+.menu .narrow_expander a {
+  color: black;
+  text-decoration: none;
+}
+.menu .menu ul {
+  /* no floaty stuff, full width */
+  position:relative;
+  left:0!important;
+  width:auto;
+}
+
+.menu ul li {
+  float:none;
+  width:auto;
+}

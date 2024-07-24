@@ -1,0 +1,174 @@
+:root {
+	--primaryBlue:#0cc3e2;
+	--altBlue:#0ca3c2;
+	--alternateSection:#eee;
+}
+
+body {
+	text-align: center;
+	font-family: sans-serif, Verdana, Myriad Web, Syntax, helvetica;
+	color:#000000;
+	font-size:1em;
+	line-height:1.5;
+	margin:0;
+}
+
+h1,h2,h3,h4 {clear:both;}
+h1 { font-size: 2.875rem;
+font-weight: 800;
+margin-top:7px; }
+h2 { font-size:1.7rem;font-weight: 800; }
+h3 { font-size:1.250rem;font-weight: 800; }
+h4 { font-size:1.250rem;font-weight: 800;font-style:italic; }
+address { font-size: 0.8em; text-align: right; }
+.footnote { font-style: italic; font-size: 0.8em; text-align: left; }
+
+a{
+	font-weight: 600;text-decoration:none;
+	color:var(--primaryBlue);
+}
+a:hover{text-decoration:underline;}
+
+.footer a {
+	font-weight: normal;
+}
+/* ads */
+.top_ad_box {
+	max-width:400px;
+}
+.bottom_ad_box {
+	max-width:400px;
+}
+
+/* layout */
+
+/* page_segment */
+.page_segment { clear:both; }
+.page_segment.alternate {
+	background-color:var(--alternateSection);
+}
+.page_segment.menu {
+	background-color:var(--alternateSection);
+}
+
+.page_content {
+	margin: 0 auto;
+	max-width: 948px;
+	text-align:left;
+	padding:20px;
+}
+.page_content.nopadding {
+	padding:0;
+}
+
+.theader {
+	padding-bottom:10px;
+	padding-top:10px;
+}
+.theader img {
+	width:312px;
+	height:116px;
+}
+
+.footer {
+	text-align:center;
+	font-size:0.8em;
+	color:#889;
+	padding:7px;
+}
+
+/* list of items */
+ul.content_list {
+	list-style-type: none;
+	padding:0;
+}
+
+ul.content_list > li {
+	padding:0;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+ul.content_list > li.even {
+	background-color: #f0f0f0;
+}
+
+ul.content_list > li.letter h2 {
+	margin-bottom:0;
+}
+
+ul.content_list > li.ad {
+}
+
+.jump_links {
+	font-size:24px;
+	font-weight:bold;
+	line-height:1.5em;
+	text-align:center;
+}
+
+.jump_links a {
+	padding:10px;
+}
+
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget span iframe[style] {
+  min-width: 100% !important;
+  width: 100% !important;
+}
+
+/* menu */
+
+.menu .menu {
+	float:left;
+	width:200px;
+	position:relative;
+	cursor:pointer;
+}
+.menu .menu ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	width:100%;
+}
+.menu ul li, .menu .menu .header {
+	text-align:center;
+	padding:14px;
+	vertical-align: center;
+}
+
+.menu .menu .header {
+	background-color:#d6d6d6;
+}
+
+.menu .menu.collapsed .header {
+	background-color: var(--alternateSection);
+}
+
+.menu ul li {
+	background-color:#d6d6d6;
+	width:172px;
+	float:left;
+}
+
+.menu ul li a {
+	display:block;
+}
+.menu .menu.collapsed ul, .menu .narrow_expander {
+	display:none;
+}
+.menu .menu ul {
+	position:absolute;
+	width:600px;
+}
+
+.tleft > .menu {
+	overflow: visible;
+}
+
+
+/*std list*/
+td.left {
+	width:100px;
+}
